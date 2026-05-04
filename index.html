@@ -3,531 +3,1145 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VehicleAI - Mobile AI-Enabled Vehicle Assistant System</title>
+    <meta
+      name="description"
+      content="RoadResq: AI-enabled vehicle assistant system research portfolio"
+    />
+    <title>RoadResq | Research Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Navigation -->
-    <nav>
-      <div class="nav-container">
-        <div class="logo"><span>🚗</span> RoadResq</div>
-        <ul class="nav-links">
-          <li><a href="#features">Features</a></li>
-          <li><a href="#modules">Modules</a></li>
-          <li><a href="#technology">Technology</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <button class="cta-btn">Download</button>
-      </div>
-    </nav>
+    <header class="navbar">
+      <div class="container navbar-inner">
+        <a class="navbar-logo" href="#home" aria-label="RoadResq home">
+          <span class="logo-icon">R</span>
+          <span class="logo-text">ROAD<span>RESQ</span></span>
+        </a>
 
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="hero-content">
-        <div class="hero-badge">
-          🎓 Final Year Undergraduate Project 2025-26
-        </div>
-        <h1>Mobile AI-Enabled Vehicle Assistant System</h1>
-        <p>
-          Intelligent vehicle diagnosis, real-time emergency detection, damage
-          assessment, and smart service recommendations in one powerful mobile
-          app.
-        </p>
-        <div class="hero-buttons">
-          <button class="btn-primary">View Project</button>
-          <button class="btn-secondary">Learn More</button>
-        </div>
-      </div>
-    </section>
+        <nav class="navbar-links" aria-label="Primary">
+          <a href="#home" class="active">Home</a>
+          <a href="#domain">Domain</a>
+          <a href="#milestones">Milestones</a>
+          <a href="#documents">Documents</a>
+          <a href="#slides">Slides</a>
+          <a href="#about">About Us</a>
+          <a href="#contact">Contact</a>
+        </nav>
 
-    <!-- Features Section -->
-    <section class="features" id="features">
-      <div class="section-header">
-        <h2>Key Features</h2>
-        <p>
-          Comprehensive vehicle assistance powered by artificial intelligence
-          and sensor fusion
-        </p>
+        <button class="navbar-toggle" type="button" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
-      <div class="features-grid">
-        <div class="feature-card fade-in">
-          <div class="feature-icon">📊</div>
-          <h3>Dashboard Diagnosis</h3>
-          <p>
-            AI-powered dashboard warning light recognition. Capture a photo and
-            get instant explanations of vehicle issues.
-          </p>
-        </div>
-        <div class="feature-card fade-in">
-          <div class="feature-icon">💰</div>
-          <h3>Cost Estimation</h3>
-          <p>
-            Accurate repair cost predictions using machine learning. Get
-            realistic estimates before visiting a garage.
-          </p>
-        </div>
-        <div class="feature-card fade-in">
-          <div class="feature-icon">📍</div>
-          <h3>Smart Locator</h3>
-          <p>
-            Location-based repair center recommendations with ratings,
-            availability, and real-time towing activation.
-          </p>
-        </div>
-        <div class="feature-card fade-in">
-          <div class="feature-icon">🚨</div>
-          <h3>Crash Detection</h3>
-          <p>
-            Multi-sensor emergency detection with automatic emergency contact
-            notification and digital accident reports.
-          </p>
-        </div>
-        <div class="feature-card fade-in">
-          <div class="feature-icon">🔒</div>
-          <h3>Secure & Private</h3>
-          <p>
-            End-to-end encryption with secure cloud storage. Your vehicle data
-            stays protected and private.
-          </p>
-        </div>
-        <div class="feature-card fade-in">
-          <div class="feature-icon">⚡</div>
-          <h3>Real-time Response</h3>
-          <p>
-            Instant notifications to hospitals, ambulances, police, and family
-            members in emergency situations.
-          </p>
-        </div>
-      </div>
-    </section>
 
-    <!-- Modules Section -->
-    <section class="modules" id="modules">
-      <div class="section-header">
-        <h2>System Modules</h2>
-        <p>
-          Four integrated AI modules working together for comprehensive vehicle
-          support
-        </p>
-      </div>
-      <div class="modules-grid">
-        <div class="module-card">
-          <div class="module-number">1</div>
-          <h3>Dashboard Scanner</h3>
-          <p>
-            Computer vision-based warning light classification using CNN models
-            to identify vehicle issues from dashboard images.
+      <nav class="navbar-mobile" aria-label="Mobile"></nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-bg-effects">
+          <div class="hero-orb hero-orb-1"></div>
+          <div class="hero-orb hero-orb-2"></div>
+          <div class="hero-orb hero-orb-3"></div>
+        </div>
+
+        <div class="container hero-content">
+          <div class="hero-text reveal">
+            <span class="hero-badge">
+              <span class="pulse-dot"></span>
+              Final Year Research Project 2025-26
+            </span>
+            <h1 class="hero-title">
+              AI-Enabled
+              <span class="highlight">Vehicle Assistant System</span>
+            </h1>
+            <p class="hero-description">
+              RoadResq is a mobile-first intelligent vehicle assistance
+              platform that combines dashboard diagnosis, repair cost
+              prediction, smart service recommendations, and crash detection
+              into one connected research solution.
+            </p>
+            <div class="hero-buttons">
+              <a class="btn btn-primary" href="#documents">View Documents</a>
+              <a class="btn btn-secondary" href="#domain">Explore Domain</a>
+            </div>
+            <div class="hero-stats">
+              <div class="hero-stat">
+                <div class="hero-stat-value">4</div>
+                <div class="hero-stat-label">Core Modules</div>
+              </div>
+              <div class="hero-stat">
+                <div class="hero-stat-value">AI</div>
+                <div class="hero-stat-label">Powered System</div>
+              </div>
+              <div class="hero-stat">
+                <div class="hero-stat-value">SLIIT</div>
+                <div class="hero-stat-label">Research Team</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal">
+            <div class="hero-image-container">
+              <div class="hero-glow-backdrop"></div>
+              <div class="hero-visual-card glass-card">
+                <span class="section-label">System Modules</span>
+                <div class="hero-modules-preview">
+                  <article class="mini-module teal">
+                    <h3>Dashboard Scanner</h3>
+                    <p>Warning light recognition with CNN models.</p>
+                  </article>
+                  <article class="mini-module purple">
+                    <h3>Cost Estimator</h3>
+                    <p>Machine learning-based repair price prediction.</p>
+                  </article>
+                  <article class="mini-module orange">
+                    <h3>Smart Locator</h3>
+                    <p>Nearby service centers and towing support.</p>
+                  </article>
+                  <article class="mini-module pink">
+                    <h3>Crash Detector</h3>
+                    <p>Emergency response with multi-sensor fusion.</p>
+                  </article>
+                </div>
+              </div>
+
+              <div class="floating-stat float-top-right">
+                <div class="stat-icon-wrapper teal">AI</div>
+                <div class="stat-text">
+                  <strong>Diagnosis</strong>
+                  <span>Real-time insights</span>
+                </div>
+              </div>
+
+              <div class="floating-stat float-bottom-left">
+                <div class="stat-icon-wrapper purple">ML</div>
+                <div class="stat-text">
+                  <strong>Prediction</strong>
+                  <span>Repair cost estimation</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section domain-hero" id="domain">
+        <div class="container">
+          <span class="section-label">Research Domain</span>
+          <h2 class="section-title">
+            Domain <span class="gradient-text">Overview</span>
+          </h2>
+          <p class="section-subtitle">
+            The RoadResq research domain focuses on safer, faster, and smarter
+            post-incident and maintenance support for vehicle owners through AI,
+            computer vision, sensor fusion, and mobile computing.
           </p>
-          <ul class="module-features">
-            <li>EfficientNetB0 & VGG16 models</li>
-            <li>11 warning categories</li>
-            <li>99%+ accuracy</li>
-            <li>Real-time classification</li>
-          </ul>
         </div>
-        <div class="module-card">
-          <div class="module-number">2</div>
-          <h3>Cost Estimator</h3>
-          <p>
-            ML-based repair cost prediction combining vehicle specs, damage
-            info, and localized pricing data from Sri Lankan repair market.
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="domain-two-col">
+            <article class="research-highlight reveal">
+              <h3>Research Problem</h3>
+              <p>
+                Drivers often struggle to interpret dashboard warnings, estimate
+                repair costs, identify reliable nearby service providers, and
+                react quickly during accidents. Existing tools usually solve
+                these as separate problems and rarely provide one connected,
+                localized, mobile-friendly system.
+              </p>
+            </article>
+
+            <article class="research-highlight reveal">
+              <h3>Research Gap</h3>
+              <p>
+                There is limited integration of vehicle diagnostics, cost
+                estimation, repair center discovery, and emergency response in a
+                single AI-assisted ecosystem designed for Sri Lankan vehicle
+                users and local service conditions.
+              </p>
+            </article>
+          </div>
+
+          <div class="lit-review-grid reveal-stagger">
+            <article class="glass-card lit-card">
+              <div class="lit-card-number">01</div>
+              <h4>Computer Vision Diagnostics</h4>
+              <p>
+                Studies show CNN-based classification can identify dashboard
+                warning categories with high accuracy from captured images.
+              </p>
+            </article>
+            <article class="glass-card lit-card">
+              <div class="lit-card-number">02</div>
+              <h4>Predictive Cost Modeling</h4>
+              <p>
+                Regression and ensemble models can estimate repair cost when
+                vehicle condition, damage type, and market pricing are known.
+              </p>
+            </article>
+            <article class="glass-card lit-card">
+              <div class="lit-card-number">03</div>
+              <h4>Emergency Detection</h4>
+              <p>
+                Multi-sensor accident detection improves reliability by
+                combining IMU, audio, location, and vehicle telemetry signals.
+              </p>
+            </article>
+          </div>
+
+          <div class="objectives-list">
+            <div class="objective-item reveal">
+              <div class="objective-number">1</div>
+              <div class="objective-text">
+                <strong>Recognize dashboard warning lights</strong> from mobile
+                camera input and provide understandable explanations.
+              </div>
+            </div>
+            <div class="objective-item reveal">
+              <div class="objective-number">2</div>
+              <div class="objective-text">
+                <strong>Estimate vehicle repair cost</strong> using machine
+                learning models and contextual vehicle information.
+              </div>
+            </div>
+            <div class="objective-item reveal">
+              <div class="objective-number">3</div>
+              <div class="objective-text">
+                <strong>Recommend nearby repair services</strong> with ratings,
+                quotes, and towing accessibility.
+              </div>
+            </div>
+            <div class="objective-item reveal">
+              <div class="objective-number">4</div>
+              <div class="objective-text">
+                <strong>Detect crashes automatically</strong> and trigger
+                emergency notifications with digital incident reporting.
+              </div>
+            </div>
+          </div>
+
+          <div class="methodology-flow reveal-stagger">
+            <article class="method-step">
+              <div class="method-step-num">Step 01</div>
+              <h4>Data Collection</h4>
+              <p>Vehicle imagery, repair pricing, location data, and sensor logs.</p>
+            </article>
+            <article class="method-step">
+              <div class="method-step-num">Step 02</div>
+              <h4>Model Training</h4>
+              <p>CNN classification, Random Forest estimation, and fusion logic.</p>
+            </article>
+            <article class="method-step">
+              <div class="method-step-num">Step 03</div>
+              <h4>Backend Services</h4>
+              <p>FastAPI endpoints, cloud storage, and service integration.</p>
+            </article>
+            <article class="method-step">
+              <div class="method-step-num">Step 04</div>
+              <h4>Mobile Experience</h4>
+              <p>Flutter application for accessible, real-time user support.</p>
+            </article>
+            <article class="method-step">
+              <div class="method-step-num">Step 05</div>
+              <h4>Evaluation</h4>
+              <p>Accuracy, usability, response time, and integration testing.</p>
+            </article>
+          </div>
+
+          <div class="tech-grid reveal-stagger">
+            <div class="tech-badge"><div class="tech-badge-icon">TF</div><span>TensorFlow</span></div>
+            <div class="tech-badge"><div class="tech-badge-icon">SK</div><span>Scikit-learn</span></div>
+            <div class="tech-badge"><div class="tech-badge-icon">CV</div><span>OpenCV</span></div>
+            <div class="tech-badge"><div class="tech-badge-icon">FA</div><span>FastAPI</span></div>
+            <div class="tech-badge"><div class="tech-badge-icon">FL</div><span>Flutter</span></div>
+            <div class="tech-badge"><div class="tech-badge-icon">FB</div><span>Firebase</span></div>
+            <div class="tech-badge"><div class="tech-badge-icon">WS</div><span>WebSocket</span></div>
+            <div class="tech-badge"><div class="tech-badge-icon">ML</div><span>MLOps</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section modules-section">
+        <div class="container">
+          <span class="section-label">System Modules</span>
+          <h2 class="section-title">
+            Solution <span class="gradient-text">Architecture</span>
+          </h2>
+          <p class="section-subtitle">
+            Four AI-centered modules work together to deliver end-to-end vehicle
+            assistance from diagnosis to emergency response.
           </p>
-          <ul class="module-features">
-            <li>Random Forest regression</li>
-            <li>Localized pricing</li>
-            <li>Cost breakdown</li>
-            <li>Insurance integration</li>
-          </ul>
+
+          <div class="modules-grid reveal-stagger">
+            <article class="glass-card module-card teal">
+              <div class="module-card-icon teal">1</div>
+              <h3>Dashboard Scanner</h3>
+              <p>
+                Classifies dashboard warning lights from captured images and
+                presents clear issue explanations and recommended next actions.
+              </p>
+              <div class="module-owner">
+                <span class="owner-dot"></span>
+                Gamage K.G.J.C
+              </div>
+            </article>
+            <article class="glass-card module-card purple">
+              <div class="module-card-icon purple">2</div>
+              <h3>Cost Estimator</h3>
+              <p>
+                Predicts repair expenses using vehicle condition, fault type,
+                and localized pricing patterns from the Sri Lankan market.
+              </p>
+              <div class="module-owner">
+                <span class="owner-dot"></span>
+                Chathurya S.B.D
+              </div>
+            </article>
+            <article class="glass-card module-card orange">
+              <div class="module-card-icon orange">3</div>
+              <h3>Smart Locator</h3>
+              <p>
+                Recommends nearby service providers with ratings, service
+                availability, and towing coordination support.
+              </p>
+              <div class="module-owner">
+                <span class="owner-dot"></span>
+                Gallage C.V
+              </div>
+            </article>
+            <article class="glass-card module-card pink">
+              <div class="module-card-icon pink">4</div>
+              <h3>Crash Detector</h3>
+              <p>
+                Uses sensor fusion and incident logic to detect emergencies and
+                send alerts to responders and trusted contacts.
+              </p>
+              <div class="module-owner">
+                <span class="owner-dot"></span>
+                Udara K.V.L
+              </div>
+            </article>
+          </div>
         </div>
-        <div class="module-card">
-          <div class="module-number">3</div>
-          <h3>Smart Locator</h3>
-          <p>
-            GPS-based service provider recommendations with bidding system,
-            ratings, and real-time towing service activation.
+      </section>
+
+      <section class="section impact-section">
+        <div class="container">
+          <article class="impact-card reveal">
+            <h3>Expected Research Impact</h3>
+            <p>
+              RoadResq aims to reduce confusion around vehicle issues, improve
+              response speed during emergencies, help users make better repair
+              decisions, and strengthen trust between drivers and local service
+              providers through explainable AI support.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section milestones-hero" id="milestones">
+        <div class="container">
+          <span class="section-label">Project Timeline</span>
+          <h2 class="section-title">
+            Milestones & <span class="gradient-text">Assessments</span>
+          </h2>
+          <p class="section-subtitle">
+            Track the academic and development progress of RoadResq across each
+            major review stage.
           </p>
-          <ul class="module-features">
-            <li>Location-based filtering</li>
-            <li>Service ratings</li>
-            <li>Quote comparison</li>
-            <li>Towing activation</li>
-          </ul>
         </div>
-        <div class="module-card">
-          <div class="module-number">4</div>
-          <h3>Crash Detector</h3>
-          <p>
-            Multi-sensor decision-level fusion combining audio, OBD-II, IMU, and
-            GPS for accurate accident detection and emergency response.
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="timeline-dot completed"></div>
+              <div class="glass-card timeline-card">
+                <div class="timeline-card-header">
+                  <h3>Project Proposal</h3>
+                  <span class="marks-badge">Completed</span>
+                </div>
+                <div class="timeline-meta">
+                  <span>July 2025</span>
+                  <span>Initial research scope</span>
+                </div>
+                <div class="timeline-details">
+                  <p>
+                    Project concept, background study, objectives, and initial
+                    methodology were proposed and reviewed.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-dot completed"></div>
+              <div class="glass-card timeline-card">
+                <div class="timeline-card-header">
+                  <h3>Progress Presentation 1</h3>
+                  <span class="marks-badge">Completed</span>
+                </div>
+                <div class="timeline-meta">
+                  <span>October 2025</span>
+                  <span>50% completion review</span>
+                </div>
+                <div class="timeline-details">
+                  <p>
+                    Literature review, data gathering, and early module
+                    prototypes were evaluated with feedback for refinement.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-dot in-progress"></div>
+              <div class="glass-card timeline-card">
+                <div class="timeline-card-header">
+                  <h3>Progress Presentation 2</h3>
+                  <span class="marks-badge">In Progress</span>
+                </div>
+                <div class="timeline-meta">
+                  <span>January 2026</span>
+                  <span>90% completion review</span>
+                </div>
+                <div class="timeline-details">
+                  <p>
+                    Integrated implementation, model evaluation, and backend to
+                    mobile connectivity are being consolidated for assessment.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-dot upcoming"></div>
+              <div class="glass-card timeline-card">
+                <div class="timeline-card-header">
+                  <h3>Final Assessment</h3>
+                  <span class="marks-badge">Upcoming</span>
+                </div>
+                <div class="timeline-meta">
+                  <span>April 2026</span>
+                  <span>Project evaluation</span>
+                </div>
+                <div class="timeline-details">
+                  <p>
+                    Final dissertation, system demonstration, and performance
+                    validation will be submitted for academic review.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-dot upcoming"></div>
+              <div class="glass-card timeline-card">
+                <div class="timeline-card-header">
+                  <h3>Viva</h3>
+                  <span class="marks-badge">Upcoming</span>
+                </div>
+                <div class="timeline-meta">
+                  <span>May 2026</span>
+                  <span>Final defense</span>
+                </div>
+                <div class="timeline-details">
+                  <p>
+                    Team members will present individual contributions, defend
+                    technical decisions, and answer evaluation panel questions.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section docs-hero" id="documents">
+        <div class="container">
+          <span class="section-label">Research Documents</span>
+          <h2 class="section-title">
+            Document <span class="gradient-text">Library</span>
+          </h2>
+          <p class="section-subtitle">
+            Access, download, and explore all key research documents produced
+            during the RoadResq project.
           </p>
-          <ul class="module-features">
-            <li>Multi-modal fusion</li>
-            <li>Audio + MFCC features</li>
-            <li>Automated alerting</li>
-            <li>Digital accident reports</li>
-          </ul>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Specifications Section -->
-    <section class="specifications" id="technology">
-      <div class="section-header">
-        <h2>Technical Specifications</h2>
-        <p>Built with cutting-edge technologies and best practices</p>
-      </div>
-      <div class="specs-container">
-        <div class="spec-item">
-          <h4>Frontend</h4>
-          <p>Flutter (Mobile)</p>
-        </div>
-        <div class="spec-item">
-          <h4>Backend</h4>
-          <p>FastAPI (Python)</p>
-        </div>
-        <div class="spec-item">
-          <h4>ML Models</h4>
-          <p>TensorFlow & Scikit-learn</p>
-        </div>
-        <div class="spec-item">
-          <h4>Database</h4>
-          <p>Firebase (Cloud)</p>
-        </div>
-        <div class="spec-item">
-          <h4>Deployment</h4>
-          <p>Google Cloud Platform</p>
-        </div>
-        <div class="spec-item">
-          <h4>APIs</h4>
-          <p>REST + Real-time WebSocket</p>
-        </div>
-      </div>
-    </section>
+      <section class="section">
+        <div class="container">
+          <div class="docs-toolbar">
+            <div class="search-input-wrapper">
+              <span class="search-icon">⌕</span>
+              <input
+                class="search-input"
+                id="document-search"
+                type="search"
+                placeholder="Search documents..."
+              />
+            </div>
+          </div>
 
-    <!-- Tech Stack Section -->
-    <section class="tech-stack">
-      <div class="section-header">
-        <h2>Technology Stack</h2>
-        <p>Industry-standard tools and frameworks</p>
-      </div>
-      <div class="tech-grid">
-        <div class="tech-item">
-          <h4>Deep Learning</h4>
-          <p>TensorFlow, Keras, CNN architectures</p>
-        </div>
-        <div class="tech-item">
-          <h4>ML Algorithms</h4>
-          <p>Random Forest, XGBoost, Decision Trees</p>
-        </div>
-        <div class="tech-item">
-          <h4>Image Processing</h4>
-          <p>OpenCV, PIL, Data Augmentation</p>
-        </div>
-        <div class="tech-item">
-          <h4>Audio Processing</h4>
-          <p>MFCC, Librosa, Signal Processing</p>
-        </div>
-        <div class="tech-item">
-          <h4>Sensor Integration</h4>
-          <p>OBD-II, IMU, GPS, Microphone</p>
-        </div>
-        <div class="tech-item">
-          <h4>Cloud Services</h4>
-          <p>Firebase, GCP, Cloud Storage</p>
-        </div>
-        <div class="tech-item">
-          <h4>Mobile Dev</h4>
-          <p>Flutter, Dart, Cross-platform</p>
-        </div>
-        <div class="tech-item">
-          <h4>API Design</h4>
-          <p>FastAPI, REST, WebSocket</p>
-        </div>
-      </div>
-    </section>
+          <div class="tabs" id="document-tabs">
+            <button class="tab active" data-filter="All" type="button">All</button>
+            <button class="tab" data-filter="Proposals" type="button">Proposals</button>
+            <button class="tab" data-filter="Checklists" type="button">Checklists</button>
+            <button class="tab" data-filter="TAF" type="button">TAF</button>
+            <button class="tab" data-filter="Final Thesis" type="button">Final Thesis</button>
+          </div>
 
-    <!-- Benefits Section -->
-    <section class="benefits">
-      <div class="section-header">
-        <h2>Benefits & Impact</h2>
-        <p>How VehicleAI improves road safety and driver experience</p>
-      </div>
-      <div class="benefits-grid">
-        <div class="benefit-item">
-          <div class="benefit-icon">🛡️</div>
-          <div class="benefit-content">
-            <h4>Enhanced Safety</h4>
-            <p>
-              Real-time crash detection and emergency alerts reduce response
-              time and save lives.
-            </p>
-          </div>
-        </div>
-        <div class="benefit-item">
-          <div class="benefit-icon">⏱️</div>
-          <div class="benefit-content">
-            <h4>Faster Response</h4>
-            <p>
-              Automatic emergency notifications mean faster medical and towing
-              assistance arrival.
-            </p>
-          </div>
-        </div>
-        <div class="benefit-item">
-          <div class="benefit-icon">💡</div>
-          <div class="benefit-content">
-            <h4>Driver Education</h4>
-            <p>
-              AI-powered diagnostics help drivers understand vehicle issues and
-              make informed decisions.
-            </p>
-          </div>
-        </div>
-        <div class="benefit-item">
-          <div class="benefit-icon">💵</div>
-          <div class="benefit-content">
-            <h4>Cost Savings</h4>
-            <p>
-              Accurate repair estimates prevent overcharging and support fair
-              pricing practices.
-            </p>
-          </div>
-        </div>
-        <div class="benefit-item">
-          <div class="benefit-icon">📱</div>
-          <div class="benefit-content">
-            <h4>Easy Access</h4>
-            <p>
-              Mobile-first design makes vehicle assistance accessible anywhere,
-              anytime.
-            </p>
-          </div>
-        </div>
-        <div class="benefit-item">
-          <div class="benefit-icon">🌍</div>
-          <div class="benefit-content">
-            <h4>Community Support</h4>
-            <p>
-              Localized service recommendations strengthen local repair and
-              maintenance networks.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+          <div class="docs-list" id="document-list">
+            <article class="doc-card" data-category="TAF">
+              <div class="doc-card-icon pdf">PDF</div>
+              <div class="doc-card-info">
+                <h4>TAF Document</h4>
+                <p>Topic assessment form for RoadResq • 6.6 MB</p>
+              </div>
+              <div class="doc-card-actions">
+                <span class="badge badge-orange">TAF</span>
+                <a
+                  class="btn btn-sm btn-secondary"
+                  href="https://drive.google.com/uc?export=download&id=1H74P-wAckmPr8O-H_b0eFRxXZ89pJZA4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Download</a
+                >
+              </div>
+            </article>
 
-    <!-- Timeline Section -->
-    <section class="timeline">
-      <div class="section-header">
-        <h2>Development Timeline</h2>
-        <p>Project milestones and progress</p>
-      </div>
-      <div class="timeline-items">
-        <div class="timeline-item">
-          <div class="timeline-content">
-            <h4>Requirements & Analysis</h4>
-            <p>
-              System design, architecture planning, and stakeholder requirements
-              gathering.
-            </p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-content">
-            <h4>Data Collection & Preparation</h4>
-            <p>
-              Gathering datasets for images, sensor data, and repair pricing
-              information.
-            </p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-content">
-            <h4>Model Development</h4>
-            <p>
-              Training CNN models for damage detection and cost estimation
-              algorithms.
-            </p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-content">
-            <h4>Backend Implementation</h4>
-            <p>
-              FastAPI development, database setup, and API endpoint creation.
-            </p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-content">
-            <h4>Mobile App Development</h4>
-            <p>
-              Flutter application development with UI/UX design and feature
-              integration.
-            </p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-content">
-            <h4>Testing & Optimization</h4>
-            <p>
-              Performance testing, usability testing, and system optimization.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+            <article class="doc-card" data-category="Proposals">
+              <div class="doc-card-icon pdf">PDF</div>
+              <div class="doc-card-info">
+                <h4>Proposal - Dashboard Warning Light Detection</h4>
+                <p>Dashboard warning light detection proposal • 2.4 MB</p>
+              </div>
+              <div class="doc-card-actions">
+                <span class="badge badge-blue">Proposals</span>
+                <a
+                  class="btn btn-sm btn-secondary"
+                  href="https://docs.google.com/spreadsheets/d/1whzxY9-1uMAx890-m1v1EjDbA5pcgycf/export?format=xlsx"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Download</a
+                >
+              </div>
+            </article>
 
-    <!-- Team Section -->
-    <section class="team" id="team">
-      <div class="section-header">
-        <h2>Our Team</h2>
-        <p>
-          Sri Lanka Institute of Information Technology - Department of
-          Information Technology
-        </p>
-      </div>
-      <div class="team-grid">
-        <div class="team-member fade-in">
-          <div class="member-avatar">
-            <img src="" alt="Member Image" />
-          </div>
-          <h3>Gamage K.G.J.C</h3>
-          <p>Dashboard Warning Light Detection</p>
-          <p class="member-it">IT22332776</p>
-        </div>
-        <div class="team-member fade-in">
-          <div class="member-avatar">
-            <img src="https://i.imgur.com/koZkpre.jpeg" alt="Member Image" />
-          </div>
-          <h3>Chathurya S.B.D</h3>
-          <p>Vehicle Repair Cost Estimation</p>
-          <p class="member-it">IT22597724</p>
-        </div>
-        <div class="team-member fade-in">
-          <div class="member-avatar">
-            <img src="https://i.imgur.com/fUN1NtY.jpeg" alt="Member Image" />
-          </div>
-          <h3>Gallage C.V</h3>
-          <p>Smart Repair Locator & Spare Parts</p>
-          <p class="member-it">IT22573414</p>
-        </div>
-        <div class="team-member fade-in">
-          <div class="member-avatar">
-            <img src="https://i.imgur.com/jWbP1qM.jpeg" alt="Member Image" />
-          </div>
-          <h3>Udara K.V.L</h3>
-          <p>Crash Detection & Emergency Response</p>
-          <p class="member-it">IT22573650</p>
-        </div>
-      </div>
-    </section>
+            <article class="doc-card" data-category="Proposals">
+              <div class="doc-card-icon pdf">PDF</div>
+              <div class="doc-card-info">
+                <h4>Proposal - Vehicle Repair Cost Estimation</h4>
+                <p>Vehicle repair cost estimation proposal • 2.1 MB</p>
+              </div>
+              <div class="doc-card-actions">
+                <span class="badge badge-blue">Proposals</span>
+                <a
+                  class="btn btn-sm btn-secondary"
+                  href="https://drive.google.com/uc?export=download&id=1EBN1yYd_bjkdvNoRCsNwn1LdDuaJuZaa"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Download</a
+                >
+              </div>
+            </article>
 
-    <!-- Footer -->
-    <footer id="contact">
-      <div class="footer-content">
+            <article class="doc-card" data-category="Proposals">
+              <div class="doc-card-icon pdf">PDF</div>
+              <div class="doc-card-info">
+                <h4>Proposal - Smart Repair locator and Spare Parts Bidding System</h4>
+                <p>Smart Repair locator & Spare Parts • 2.4 MB</p>
+              </div>
+              <div class="doc-card-actions">
+                <span class="badge badge-blue">Proposals</span>
+                <a
+                  class="btn btn-sm btn-secondary"
+                  href="https://drive.google.com/uc?export=download&id=1CgwVWKIdww15-ZS1FuTZQlg-Yte05TnL"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Download</a
+                >
+              </div>
+            </article>
+
+            <article class="doc-card" data-category="Proposals">
+              <div class="doc-card-icon pdf">PDF</div>
+              <div class="doc-card-info">
+                <h4>Proposal - Crash Detection and Emergency Response</h4>
+                <p>Crash detection and emergency response proposal • 2.4 MB</p>
+              </div>
+              <div class="doc-card-actions">
+                <span class="badge badge-blue">Proposals</span>
+                <a
+                  class="btn btn-sm btn-secondary"
+                  href="https://drive.google.com/uc?export=download&id=15D17_qDUQOuhAIjMF5-jBLiQrKxfyjho"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Download</a
+                >
+              </div>
+            </article>
+
+            <article class="doc-card" data-category="Checklists">
+              <div class="doc-card-icon pdf">PDF</div>
+              <div class="doc-card-info">
+                <h4>Research Checklist 1- Frontend </h4>
+                <p>Analysis and reporting milestone checklist • 1.3 MB</p>
+              </div>
+              <div class="doc-card-actions">
+                <span class="badge badge-teal">Checklists</span>
+                <a
+                  class="btn btn-sm btn-secondary"
+                  href="https://drive.google.com/uc?export=download&id=10oQEL__zLxIDcj0wkxe5rX-ZRstbfDdH"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Download</a
+                >
+              </div>
+            </article>
+
+            <article class="doc-card" data-category="Checklists">
+              <div class="doc-card-icon pdf">PDF</div>
+              <div class="doc-card-info">
+                <h4>Research Checklist 1- Backend </h4>
+                <p>Analysis and reporting milestone checklist • 1.3 MB</p>
+              </div>
+              <div class="doc-card-actions">
+                <span class="badge badge-teal">Checklists</span>
+                <a
+                  class="btn btn-sm btn-secondary"
+                  href="https://drive.google.com/uc?export=download&id=1yzkgVT_k6atZAor_OTbbbC1P4dznZhf-"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Download</a
+                >
+              </div>
+            </article>
+
+            <article class="doc-card" data-category="Checklists">
+              <div class="doc-card-icon xlsx">XLSX</div>
+              <div class="doc-card-info">
+                <h4>Research Checklist 2</h4>
+                <p>Ethical considerations and compliance report • 900 KB</p>
+              </div>
+              <div class="doc-card-actions">
+                <span class="badge badge-teal">Checklists</span>
+                <a
+                  class="btn btn-sm btn-secondary"
+                  href="https://docs.google.com/spreadsheets/d/1whzxY9-1uMAx890-m1v1EjDbA5pcgycf/edit?usp=drive_link&ouid=117742849218461615603&rtpof=true&sd=true"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Download</a
+                >
+              </div>
+            </article>
+
+            <article class="doc-card" data-category="Final Thesis">
+              <div class="doc-card-icon pdf">PDF</div>
+              <div class="doc-card-info">
+                <h4>Final Thesis</h4>
+                <p>Complete research thesis and evaluation results • 14.9 MB</p>
+              </div>
+              <div class="doc-card-actions">
+                <span class="badge badge-purple">Final Thesis</span>
+                <a
+                  class="btn btn-sm btn-secondary"
+                  href="https://drive.google.com/uc?export=download&id=1w0O3VzMcTQhlX481yKj76n3dYbsPlQRF"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Download</a
+                >
+              </div>
+            </article>
+          </div>
+
+          <div class="empty-state" id="empty-state" hidden>
+            <div class="empty-state-icon">◌</div>
+            <p>No documents found matching your criteria.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section slides-hero" id="slides">
+        <div class="container">
+          <span class="section-label">Presentation Slides</span>
+          <h2 class="section-title">
+            Project <span class="gradient-text">Presentations</span>
+          </h2>
+          <p class="section-subtitle">
+            Download key presentation decks from each RoadResq milestone.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="slides-grid reveal-stagger">
+            <article class="glass-card slide-card">
+              <div class="slide-card-preview proposal">P1</div>
+              <div class="slide-card-body">
+                <h3>Proposal Presentation</h3>
+                <p>
+                  Background, motivation, objectives, and research methodology
+                  for the RoadResq system.
+                </p>
+                <div class="slide-card-footer">
+                  <span class="badge badge-blue">September 2025</span>
+                  <a class="btn btn-sm btn-primary" href="#">Download</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="glass-card slide-card">
+              <div class="slide-card-preview pp1">P2</div>
+              <div class="slide-card-body">
+                <h3>Progress Presentation 1</h3>
+                <p>
+                  PowerPoint presentation covering literature review, early
+                  findings, prototype progress, and system design decisions.
+                </p>
+                <div class="slide-card-footer">
+                  <span class="badge badge-blue">PPTX • December 2025</span>
+                  <a
+                    class="btn btn-sm btn-primary"
+                    href="https://docs.google.com/presentation/d/1QJf3Ukls-NsNp1ON1_qiwkiT1gQTQ3TL/edit?usp=sharing&ouid=117742849218461615603&rtpof=true&sd=true"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Download PPT</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="glass-card slide-card">
+              <div class="slide-card-preview pp2">P3</div>
+              <div class="slide-card-body">
+                <h3>Progress Presentation 2</h3>
+                <p>
+                  PDF presentation covering advanced implementation
+                  results, integration status, and model evaluation before
+                  final review.
+                </p>
+                <div class="slide-card-footer">
+                  <span class="badge badge-blue">PDF • March 2026</span>
+                  <a
+                    class="btn btn-sm btn-primary"
+                    href="https://drive.google.com/uc?export=download&id=1PRhxC1b6xMaGlCyJh3thGVOMEpSmg4LS"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Download PDF</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="glass-card slide-card">
+              <div class="slide-card-preview final">P4</div>
+              <div class="slide-card-body">
+                <h3>Final Presentation</h3>
+                <p>
+                  Final integrated solution, demonstration outcomes, research
+                  contribution, and future improvements.
+                </p>
+                <div class="slide-card-footer">
+                  <span class="badge badge-blue">May 2026</span>
+                  <a class="btn btn-sm btn-primary" href="#">Download</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about-hero" id="about">
+        <div class="container">
+          <span class="section-label">Our Team</span>
+          <h2 class="section-title">
+            Meet the <span class="gradient-text">Researchers</span>
+          </h2>
+          <p class="section-subtitle">
+            Four researchers from SLIIT collaborating on an intelligent vehicle
+            assistance platform for safer road experiences.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="team-grid reveal-stagger">
+            <article class="glass-card team-card">
+              <div class="team-avatar">JG</div>
+              <h3 class="team-name">Gamage K.G.J.C</h3>
+              <p class="team-id">IT22332776</p>
+              <span class="team-role">Dashboard Warning Light Detection</span>
+              <p class="team-desc">
+                Leads the computer vision module for dashboard warning light
+                recognition and explanation.
+              </p>
+              <a class="team-email" href="mailto:IT22332776@my.sliit.lk"
+                >IT22332776@my.sliit.lk</a
+              >
+            </article>
+
+            <article class="glass-card team-card">
+              <div class="team-avatar">CS</div>
+              <h3 class="team-name">Chathurya S.B.D</h3>
+              <p class="team-id">IT22597724</p>
+              <span class="team-role">Vehicle Repair Cost Estimation</span>
+              <p class="team-desc">
+                Develops the pricing intelligence component for fair and
+                explainable repair cost prediction.
+              </p>
+              <a class="team-email" href="mailto:IT22597724@my.sliit.lk"
+                >IT22597724@my.sliit.lk</a
+              >
+            </article>
+
+            <article class="glass-card team-card">
+              <div class="team-avatar">GC</div>
+              <h3 class="team-name">Gallage C.V</h3>
+              <p class="team-id">IT22573414</p>
+              <span class="team-role">Smart Repair Locator and Spare Parts Bidding System</span>
+              <p class="team-desc">
+                Focuses on location-aware repair recommendations and service
+                provider coordination.
+              </p>
+              <a class="team-email" href="mailto:IT22573414@my.sliit.lk"
+                >IT22573414@my.sliit.lk</a
+              >
+            </article>
+
+            <article class="glass-card team-card">
+              <div class="team-avatar">UK</div>
+              <h3 class="team-name">Udara K.V.L</h3>
+              <p class="team-id">IT22573650</p>
+              <span class="team-role">Crash Detection & Emergency Response</span>
+              <p class="team-desc">
+                Builds the multi-sensor crash detection and emergency alerting
+                workflow for rapid response.
+              </p>
+              <a class="team-email" href="mailto:IT22573650@my.sliit.lk"
+                >IT22573650@my.sliit.lk</a
+              >
+            </article>
+          </div>
+
+          <div class="supervisor-section reveal">
+            <span class="section-label">Supervisor</span>
+            <h3 class="section-title">
+              Project <span class="gradient-text">Supervisor</span>
+            </h3>
+            <div class="supervisor-card">
+              <div class="team-avatar supervisor-avatar">RS</div>
+              <div class="supervisor-info">
+                <h3>Mr. Ravi Supunya</h3>
+                <span class="team-role">Project Supervisor</span>
+                <p>
+                  Provides guidance on project direction, software engineering
+                  research practices, and evaluation readiness for RoadResq.
+                </p>
+                <p class="supervisor-meta">
+                  Faculty of Computing, Sri Lanka Institute of Information
+                  Technology
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-hero" id="contact">
+        <div class="container">
+          <span class="section-label">Get In Touch</span>
+          <h2 class="section-title">
+            Contact <span class="gradient-text">Us</span>
+          </h2>
+          <p class="section-subtitle">
+            Reach out to the RoadResq research team for collaboration,
+            discussion, or project inquiries.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="contact-members-grid reveal-stagger">
+            <article class="member-contact-card glass-card">
+              <div class="member-card-top">
+                <div class="member-avatar-wrapper">
+                  <div class="member-avatar-fallback">JG</div>
+                </div>
+                <div class="member-card-identity">
+                  <h3>Gamage K.G.J.C</h3>
+                  <span class="member-sid">IT22332776</span>
+                  <span class="member-role-badge">Dashboard Detection</span>
+                </div>
+              </div>
+              <p class="member-card-desc">
+                Researching AI-powered recognition of vehicle dashboard warning
+                lights and user guidance.
+              </p>
+              <div class="member-contact-details">
+                <a class="member-contact-link" href="mailto:IT22332776@my.sliit.lk"
+                  >IT22332776@my.sliit.lk</a
+                >
+              </div>
+            </article>
+
+            <article class="member-contact-card glass-card">
+              <div class="member-card-top">
+                <div class="member-avatar-wrapper">
+                  <div class="member-avatar-fallback">CS</div>
+                </div>
+                <div class="member-card-identity">
+                  <h3>Chathurya S.B.D</h3>
+                  <span class="member-sid">IT22597724</span>
+                  <span class="member-role-badge">Cost Estimation</span>
+                </div>
+              </div>
+              <p class="member-card-desc">
+                Building predictive models for realistic repair cost estimation
+                based on vehicle and damage data.
+              </p>
+              <div class="member-contact-details">
+                <a class="member-contact-link" href="mailto:IT22597724@my.sliit.lk"
+                  >IT22597724@my.sliit.lk</a
+                >
+              </div>
+            </article>
+
+            <article class="member-contact-card glass-card">
+              <div class="member-card-top">
+                <div class="member-avatar-wrapper">
+                  <div class="member-avatar-fallback">GC</div>
+                </div>
+                <div class="member-card-identity">
+                  <h3>Gallage C.V</h3>
+                  <span class="member-sid">IT22573414</span>
+                  <span class="member-role-badge">Smart Locator</span>
+                </div>
+              </div>
+              <p class="member-card-desc">
+                Designing the location-based service recommendation and towing
+                assistance features.
+              </p>
+              <div class="member-contact-details">
+                <a class="member-contact-link" href="mailto:IT22573414@my.sliit.lk"
+                  >IT22573414@my.sliit.lk</a
+                >
+              </div>
+            </article>
+
+            <article class="member-contact-card glass-card">
+              <div class="member-card-top">
+                <div class="member-avatar-wrapper">
+                  <div class="member-avatar-fallback">UK</div>
+                </div>
+                <div class="member-card-identity">
+                  <h3>Udara K.V.L</h3>
+                  <span class="member-sid">IT22573650</span>
+                  <span class="member-role-badge">Crash Detection</span>
+                </div>
+              </div>
+              <p class="member-card-desc">
+                Working on multi-sensor crash recognition and automated
+                emergency reporting.
+              </p>
+              <div class="member-contact-details">
+                <a class="member-contact-link" href="mailto:IT22573650@my.sliit.lk"
+                  >IT22573650@my.sliit.lk</a
+                >
+              </div>
+            </article>
+          </div>
+
+          <div class="location-card glass-card reveal">
+            <div class="location-card-inner">
+              <div class="contact-info-icon">⌂</div>
+              <div>
+                <h4>Sri Lanka Institute of Information Technology</h4>
+                <p>New Kandy Road, Malabe, Sri Lanka</p>
+                <p class="location-sub">
+                  Faculty of Computing - Department of Information Technology
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
         <div class="footer-grid">
-          <div class="footer-section">
-            <h4>About Project</h4>
+          <div class="footer-brand">
+            <h3>ROAD<span>RESQ</span></h3>
             <p>
-              VehicleAI is a comprehensive vehicle assistance system developed
-              by students of Sri Lanka Institute of Information Technology as
-              their final year undergraduate project.
+              AI-enabled vehicle assistant system research portfolio developed
+              as a final year undergraduate project at SLIIT.
             </p>
           </div>
-          <div class="footer-section">
-            <h4>Quick Links</h4>
-            <a href="#features">Features</a><br />
-            <a href="#modules">Modules</a><br />
-            <a href="#technology">Technology</a><br />
-            <a href="#team">Team</a>
+
+          <div class="footer-col">
+            <h4>Navigate</h4>
+            <a href="#home">Home</a>
+            <a href="#domain">Domain</a>
+            <a href="#milestones">Milestones</a>
           </div>
-          <div class="footer-section">
+
+          <div class="footer-col">
+            <h4>Resources</h4>
+            <a href="#documents">Documents</a>
+            <a href="#slides">Slides</a>
+            <a href="#about">About Us</a>
+          </div>
+
+          <div class="footer-col">
             <h4>Institution</h4>
-            <p>Sri Lanka Institute of Information Technology</p>
-            <p>Faculty of Computing</p>
-            <p>Department of Information Technology</p>
-            <p>Malabe, Sri Lanka</p>
-          </div>
-          <div class="footer-section">
-            <h4>Supervisors</h4>
-            <p>Mr. Ravi Supunya</p>
-            <p>Mrs. Suriya Kumari</p>
-            <p>(Project Supervisors)</p>
+            <a href="#contact">Contact</a>
+            <a href="#contact">SLIIT</a>
+            <a href="#contact">Faculty of Computing</a>
           </div>
         </div>
+
         <div class="footer-bottom">
-          <p>
-            &copy; 2025-26 VehicleAI Project. All rights reserved. | Sri Lanka
-            Institute of Information Technology (SLIIT)
-          </p>
+          <p>&copy; 2026 RoadResq Research Portfolio</p>
+          <div class="footer-bottom-links">
+            <a href="#documents">Documents</a>
+            <a href="#slides">Presentations</a>
+            <a href="#contact">Contact</a>
+          </div>
         </div>
       </div>
     </footer>
 
     <script>
-      // Smooth scrolling for navigation links
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-          const target = document.querySelector(this.getAttribute("href"));
-          if (target) {
-            target.scrollIntoView({
+      const sections = [...document.querySelectorAll("main section[id]")];
+      const navbar = document.querySelector(".navbar");
+      const toggle = document.querySelector(".navbar-toggle");
+      const mobileNav = document.querySelector(".navbar-mobile");
+      const desktopNav = document.querySelector(".navbar-links");
+      const searchInput = document.querySelector("#document-search");
+      const tabs = [...document.querySelectorAll("#document-tabs .tab")];
+      const documentCards = [...document.querySelectorAll(".doc-card")];
+      const emptyState = document.querySelector("#empty-state");
+      const revealItems = document.querySelectorAll(".reveal, .reveal-stagger");
+      const documentsSection = document.querySelector("#documents");
+
+      mobileNav.innerHTML = desktopNav.innerHTML;
+
+      const allNavLinks = [
+        ...document.querySelectorAll(".navbar-links a"),
+        ...document.querySelectorAll(".navbar-mobile a"),
+      ];
+
+      const setActiveLink = () => {
+        const offset = window.scrollY + 120;
+        let currentId = "home";
+
+        sections.forEach((section) => {
+          if (offset >= section.offsetTop) {
+            currentId = section.id;
+          }
+        });
+
+        allNavLinks.forEach((link) => {
+          link.classList.toggle("active", link.getAttribute("href") === `#${currentId}`);
+        });
+      };
+
+      toggle.addEventListener("click", () => {
+        toggle.classList.toggle("open");
+        mobileNav.classList.toggle("open");
+      });
+
+      allNavLinks.forEach((link) => {
+        link.addEventListener("click", (event) => {
+          const requestedFilter = link.dataset.docFilter;
+          if (requestedFilter) {
+            event.preventDefault();
+            searchInput.value = "";
+            setDocumentFilter(requestedFilter);
+            documentsSection.scrollIntoView({
               behavior: "smooth",
               block: "start",
             });
           }
+          toggle.classList.remove("open");
+          mobileNav.classList.remove("open");
         });
       });
 
-      // Intersection Observer for fade-in animations
-      const observer = new IntersectionObserver(
+      const revealObserver = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
-              entry.target.style.opacity = "1";
-              entry.target.style.animation = "fadeIn 0.6s ease-out forwards";
+              entry.target.classList.add("visible");
             }
           });
         },
-        {
-          threshold: 0.1,
-          rootMargin: "0px 0px -100px 0px",
-        },
+        { threshold: 0.15 },
       );
 
-      document.querySelectorAll(".fade-in").forEach((el) => {
-        el.style.opacity = "0";
-        observer.observe(el);
+      revealItems.forEach((item) => revealObserver.observe(item));
+
+      let activeFilter = "All";
+
+      const setDocumentFilter = (filter) => {
+        activeFilter = filter;
+        tabs.forEach((button) => {
+          button.classList.toggle("active", button.dataset.filter === filter);
+        });
+        filterDocuments();
+      };
+
+      const filterDocuments = () => {
+        const query = searchInput.value.trim().toLowerCase();
+        let visible = 0;
+
+        documentCards.forEach((card) => {
+          const category = card.dataset.category;
+          const content = card.textContent.toLowerCase();
+          const matchesFilter = activeFilter === "All" || category === activeFilter;
+          const matchesQuery = content.includes(query);
+          const show = matchesFilter && matchesQuery;
+
+          card.hidden = !show;
+          if (show) {
+            visible += 1;
+          }
+        });
+
+        emptyState.hidden = visible !== 0;
+      };
+
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          setDocumentFilter(tab.dataset.filter);
+        });
       });
 
-      // Active nav link highlighting
+      searchInput.addEventListener("input", filterDocuments);
+
       window.addEventListener("scroll", () => {
-        const sections = document.querySelectorAll("section");
-        let current = "";
-
-        sections.forEach((section) => {
-          const sectionTop = section.offsetTop;
-          const sectionHeight = section.clientHeight;
-          if (pageYOffset >= sectionTop - 200) {
-            current = section.getAttribute("id");
-          }
-        });
-
-        document.querySelectorAll(".nav-links a").forEach((link) => {
-          link.classList.remove("active");
-          if (link.getAttribute("href") === `#${current}`) {
-            link.classList.add("active");
-          }
-        });
+        navbar.classList.toggle("scrolled", window.scrollY > 20);
+        setActiveLink();
       });
+
+      setActiveLink();
+      filterDocuments();
     </script>
   </body>
 </html>
