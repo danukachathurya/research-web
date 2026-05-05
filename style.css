@@ -1307,6 +1307,8 @@ input {
 }
 
 .slide-card {
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
 }
 
@@ -1337,7 +1339,25 @@ input {
 }
 
 .slide-card-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
   padding: var(--space-5);
+}
+
+.slide-card-body p {
+  flex: 1;
+}
+
+.slide-card-footer {
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: auto;
+}
+
+.slide-card-footer .btn {
+  align-self: center;
+  margin-left: 0;
 }
 
 .team-grid,
