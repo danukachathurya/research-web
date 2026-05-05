@@ -1233,6 +1233,10 @@ input {
   transition: border-color var(--transition-base), background var(--transition-base);
 }
 
+.doc-card.is-hidden {
+  display: none !important;
+}
+
 .doc-card:hover {
   border-color: var(--border-hover);
   background: var(--bg-glass-hover);
@@ -1462,9 +1466,15 @@ input {
   margin-top: var(--space-8);
 }
 
+.supervisor-grid {
+  display: grid;
+  gap: var(--space-4);
+  margin-top: var(--space-5);
+}
+
 .supervisor-card {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: var(--space-6);
   padding: var(--space-6);
   border: 1px solid var(--border-glass);
@@ -1476,9 +1486,33 @@ input {
   flex-shrink: 0;
   width: 96px;
   height: 96px;
+  margin: 0;
+  object-fit: cover;
+  object-position: center;
+  border: 3px solid rgba(255, 255, 255, 0.08);
   color: var(--bg-primary);
   font-size: var(--text-3xl);
   background: linear-gradient(135deg, var(--accent-blue), #2563eb);
+}
+
+.supervisor-info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: var(--space-2);
+  min-width: 0;
+  padding-top: 2px;
+}
+
+.supervisor-info h3,
+.supervisor-info p,
+.supervisor-meta {
+  margin: 0;
+}
+
+.supervisor-info .team-role {
+  margin-bottom: var(--space-2);
+  align-self: flex-start;
 }
 
 .member-contact-card {
